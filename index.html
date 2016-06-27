@@ -13,13 +13,14 @@
             vertical-align:50px;
             font-family: SoftLine;
             font-size: 145px;
-            color: rgb(200,200,200);
+            color: rgb(120,120,120);
+            padding-left: 40px;
         }
         @font-face{
             font-family: SoftLine;
             src: C:\Windows\Fonts\SoftLine.otf;
         }
-        #main_logo {
+        #treble-logo {
             vertical-align: top;
         }
         .left-square {
@@ -36,48 +37,155 @@
             height: 60px;
         }
         .contactimage {
-            background: url('https://pixabay.com/static/uploads/photo/2015/08/18/12/43/flute-893911_960_720.jpg');
+            background: url('http://images.cdn.stuff.tv/sites/stuff.tv/files/styles/big-image/public/news/Blur1.jpg?itok=dR6gsctJ');
+            background-size: cover;
+            background-position: center center;
         }
-    </style>
+        .aboutimage{
+            background: url('http://www.alegriphotos.com/images/Out-of-focus-lights779.jpg');
+            background-position:center;
+            background-size: cover
+        }
+#categories{
+  overflow:hidden;
+}
+#categories li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:visible;
+ 
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(3n+2){
+  margin:0 1%;
+}
+
+#categories li:nth-child(6n+4), #categories li:nth-child(6n+5), #categories li:nth-child(6n+6) {
+	margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+#categories li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:rgb(250,250,250);
+  overflow:hidden;
+  
+  transform: skewY(-30deg) rotate(60deg);
+  
+}
+
+/* HEX CONTENT */
+#categories li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+#categories div h1, #categories div p{
+  width:100%;
+  padding:0 5%;
+  background-color: rgba(0,200,0,.8);
+  font-family: 'Raleway', sans-serif;
+}
+#categories li h1{
+  bottom:110%;
+  font-style:normal;
+  font-weight:normal;
+  font-size:1.5em;
+  padding-top:100%;
+  padding-bottom:100%;
+}
+
+#categories li p{
+	padding-top:50%;
+	top:110%;
+	padding-bottom:50%;
+}
+#categories li div:hover h1 {
+  bottom:50%;
+  padding-bottom:10%;
+}
+
+#categories li div:hover p{
+  top:20%;
+  padding-top:10%;
+}
+   </style>
     
 </head>
 
 <body>
-<img  id="main_logo" src="treble.jpg" height="188.5px" width="299px"> 
+<img  id="treble-logo" src="treble.jpg" height="188.5px" width="299px"> 
 <h1>Venterra Flute</h1>
 <hr>
-<div class="mdl-grid">
-    <div class=" mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-      <div class=" backimage contactimage"></div>
-      <div class="mdl-card__title mdl-card--expand ">
-        <h2 class="mdl-card__title-text intro-grid">Contact</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-        </div>  
+
+    
+    
+    
+<ul id="categories" class="clr">
+  <li class="pusher"></li>
+  <li>
+    <div>
+      <img src="http://pre15.deviantart.net/a8b6/th/pre/f/2013/016/0/5/sharpies__last_hurrah___black_white_by_eibbors-d5rotnr.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
     </div>
-    <div class=" mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-         <div class="aboutimage"></div>
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text intro-grid">About</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
+  </li>
+  <li>
+    <div>
+      <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
     </div>
-    <div class=" mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-         <div class="pastimage"></div>
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text intro-grid">Past Performances</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-      </div>
+  </li>
+  <li>
+    <div>
+      <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
     </div>
-</div>
+  </li>
+  <li>
+    <div>
+      <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
+    </div>
+  </li>
+  <li class="pusher"></li>
+  <li>
+    <div>
+      <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
+    </div>
+  </li>
+  <li class="pusher"></li>
+  <li>
+    <div>
+      <img src="https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg" alt="" />
+      <p>Some sample text about the article this hexagon leads to</p>
+    </div>
+  </li>
+</ul>
 
 </body>
 
